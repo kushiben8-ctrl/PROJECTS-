@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - KHUSHI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">KHUSHI</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">KHUSHI</span></h1>
+                <p class="hero-subtitle">First-Semester Engineering Student | Aspiring Full Stack Developer</p>
+                <p class="hero-description">Passionate about Civil Engineering, Web Development, and creating impactful digital experiences from Surat, Gujarat.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Connnect</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Profile Picture" id="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a second -semesterdiploma computer engineering student from Ahemdabad, Gujarat, passionate about both Gen AI and ML engineering  and full stack web development. Currently mastering HTML, CSS, JavaScript, Node.js, and MongoDB while excelling in Basic of Ai , Basic of cyber security, and intrested in politics.</p>
+                    <p>I thrive on structured learning, long study sessions, and building practical projects that solve real problems. My goal is to create web sites that actully helps in person and Own my brand in my 20s and build a start up for educational purpose </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Education</h3>
+                        <p>Diploma Engineering (2nd Semester)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Node.js, MongoDB</li>
+                     
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Coding Projects</li>
+                            <li>Dance </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+                <a href="resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Educational Web App</h3>
+                        <p>Interactive learning platform with flashcards, MCQs, and progress tracking built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Chat Application</h3>
+                        <p>Real-time chat app prototype using Node.js and Socket.io with responsive design and user authentication.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Engineering Calculator</h3>
+                        <p>Advanced calculator for civil engineering calculations including beam analysis and material properties.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <span class="error-message" id="subject-error"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-success" id="contact-success" style="display: none;">
+                <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 khushi. Made with love from ahemdabad , Gujarat.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

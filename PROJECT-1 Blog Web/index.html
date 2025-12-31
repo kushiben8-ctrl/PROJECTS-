@@ -1,0 +1,223 @@
+<!--- structure of the Blog --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Your Blog </title>
+
+    <!----linking of CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header> <!---main heading -->
+        <p id="noResult" style="text-align:center; display:none; margin-top:20px; color:#333;">
+    No results found
+</p>
+
+        <h1>
+            MY BLOG!
+        </h1>
+        <!---nav menu-->
+        <nav>
+            <ul>
+                <li><a href="#post1">POST-I</a></li>
+                <li><a href="#post2">POST-II</a></li>
+                <li><a href="#post3">POST-III</a></li>
+            </ul>
+            <input type="text" id="search" placeholder="Search Content">
+        </nav>
+    </header>
+ 
+
+    <!---BLOG-POST-1-->
+    <section class="post" id="post1">
+        <h1>
+            What Is Web Devlopment?
+        </h1>
+        <p class="date">10/12/2025</p>
+        <!----IMAGE---->
+        <img src="web devlopment.jpeg" alt="Web devlopment image ">
+        <!--main content -->
+
+        <h2>Web devlopment is the process of building websites .
+            It include designing the layout ,creating the logic
+            ,and making everything work smoothly.
+        </h2>
+        <ul>
+
+            <li><strong>Front-end devlopment:</strong> Creating the visible, client-side parts of websites.
+
+
+                <ul>
+                    <li> HTML(Hyper Text Markup Language): <br> > The structure of any websit,
+                        Includes Text, Images and Links. </li>
+                    <li>CSS(Cascading Style Sheet):
+                        <br> > The Style of an Web page, Includes Layout, Colors, Fonts and Responsiveness
+                    <li>JavaScript: <br>
+                        > Adds interactive and dynamic behaviour to websit, Includes Animation, Forms
+                        validation and more
+                    </li>
+            </li>
+
+        </ul>
+        </li>
+
+        <li><strong> Back-end devlopment:</strong> Building the server -side logic that powers websites behind the
+            scenes.
+            <ul>
+                <li>Python : Used for web servers, data analysis, and AI applications</li>
+                <li>JavaScript(Node.js): Runs JavaScript code on servers insted of just browser </li>
+                <li>PHP : Powers many large website like Facebook and Wikipedia </li>
+                <li>Java : Helps with large-scale application and Android devlopment </li>
+                <li>C# : Microsoft's language for Windows and web applications</li>
+            </ul>
+        </li>
+
+        <li> <strong> Full-stack devlopment:</strong> handling both front-end and back-end. </li>
+        </ul>
+
+        <!---summary-->
+        <h3>Web devlopment is aall about creating useful, fast, and beutiful websites. </h3>
+
+        <!---comment section-->
+        <div class="comments"></div>
+        <form class="commentForm">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Comment" required></textarea>
+               <button type="submit"> Add Comment</button>
+        </form>
+      
+
+    </section>
+    <!---Blog-Post-2-->
+    <section class="post" id="post2">
+        <h1>
+            What is Dat Analytics?
+        </h1>
+        <p class="date">11/12/2025</p>
+        <!---IMAGE-->
+        <img src="Data analytic.png" alt="Data Analytics">
+        <!--Main content -->
+
+        <h2>Data Analytics is the process of Collecting,Organizing and Studying data to find useful information
+            understand What's happening and make better decision
+            <br>It helps people and buisnesses learn from data like what worked in the past, what is happening now and
+            what might happen in future.
+        </h2>
+        <h2>Skills Required for Data Analytics</h2>
+        <ul>
+
+
+            <li> Some of the common programming language which are used are and Paython</li>
+            <li>For Databases Structure Query Language (SQL) is a programming language used.</li>
+            <li> Machine Learning is used in data analysis.</li>
+            <li>For Collecting and organising data, Data Management is used in data analysis.</li>
+            <li>To use charts and graph Data Visulisation is used.</li>
+
+
+        </ul>
+        <h3>Data analytics help buisnesses grow by tuurning raw data into useful insights. it supports smartert
+            decision, better plannning and improve customer service across many industries not just fianance.</h3>
+        <!--types with image-->
+        <img height="400px" src="Type-of-Data-Analytics-1024.png" alt="TTYPE OF DATA ANALTICS">
+        <ol>
+
+            <li><strong>
+                    Descriptive Analytics:</strong> <br>
+                > Summerrize and understand past data. <br>
+                > companies use it to compare results, find strength and weeknesses and spot any unusual
+                patterns
+            </li>
+            <li> <strong>Dignostic Data Analytic:</strong> <br>
+                Looks at why something happened in the past<br>
+                companies use it to understand the reason behind ddrop in sale </li>
+            <li><strong>Predectivee Data Analytics: </strong><br>
+                Used to guess what might happen in future<br>
+                Buisnesses use it to predict things like customer behaviour, future sales and possible risk.
+            </li>
+
+        </ol>
+
+        <!--comment section-->
+        <div class="comments"></div>
+        <form class="commentForm">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Comment" required></textarea>
+               <button type="submit"> Add Comment</button>
+        </form>
+     
+        <!--Blog-Post-3-->
+    </section>
+    <section class="post" id="post3">
+        <h1>
+            What is Endpoint Security?
+        </h1>
+        <p class="date">11/12/2025</p>
+        <img src="End point.jpeg" alt="Endpoint image ">
+
+        <h2>Endpoint Security protects devices from unauthorized access and threats.
+        </h2>
+
+        <h2>
+            Endpoint Security Threat.
+        </h2>
+        <ul>
+
+            <li><strong>Malware</strong>
+                <br>
+                > Refers to common digital threats such as viruses, trojans horses, and worms. while there is an influx
+                od new malware eachday <br>
+                > Tools including antivirus software and firewalls help protect against these threats and are supported
+                by global technology provider like <a href="https://www.Microsoft.com">Microsoft</a> and intel,who are
+                constantly updating their threat defination databases.
+
+            </li>
+
+            <li><strong>Cryptojacking</strong>
+                <br>
+                > Refers to the practice of running unauthorized cryptomining code on an endpoint device. <br>
+                > Cryptomining is the process of authenticating cryptocurrency transictions for a small cryptocurrency
+                reward. <br>
+                Hacker may install malware on vulnerable endpoint device that runs cryptomining code as background
+                process, causing a significant drain on performance.
+            </li>
+            <li>
+                <strong> Ransomware</strong> <br>
+                > locks down an end point device and directs users to submit a payment <br>
+                > By restore acsses,under threats of erasing all data on the device if a payment isn't provided.
+            </li>
+            <li>
+                <strong> Phising </strong><br>
+                > Occurs when hackers send fraudulent emails or messages. <br>
+                > The attempt to get unsuspecting workers to follow hyperlinks to compromised websites,download malware,
+                or grant device permission to unauthorized users.
+            </li>
+            <li><strong>
+                    Zero-day attacks </strong><br>
+                Refers to priviously unknown exploits for which there is no remedy. and limit the scope of damage or
+                losses.
+            </li>
+         
+        </ul>
+
+
+
+        <div class="comments"></div>
+        <form class="commentForm">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Comment" required></textarea>
+               <button type="submit"> Add Comment</button>
+        </form>
+       
+
+    </section>
+
+ <!----linking the java script -->
+    <script src="script.js"></script>
+
+</body>
+    
+</html>
