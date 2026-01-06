@@ -1,0 +1,75 @@
+.container {
+  width: 575px;
+  height: 825px;
+
+  background-color: #7e91ff;
+  padding-left: 30px;
+}
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+  background-color: #ff6cbf;
+ 
+}
+
+#weight-guide {
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+#results {
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(255, 248, 235);
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #ffbdab;
+  padding: 1px 30px;
+  border-radius: 8px;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #212121;
+  font-weight: bolder;
+
+  font-size: 25px;
+}
+
+h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+  font-weight: bolder;
+}
+
+#Home{
+    background-color:rgb(149, 149, 255) ;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#link{
+       background-color:rgb(172, 149, 255) ;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#one{
+    font-size: x-large;
+ font-weight: 1500;
+}

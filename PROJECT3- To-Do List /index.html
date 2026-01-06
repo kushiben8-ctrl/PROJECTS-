@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do - Color Hunt Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="container">
+            <header class="header">
+                <div class="header-left">
+                    <h1>📝 Smart Tasks</h1>
+                    <span class="task-count" id="liveCount">0 tasks</span>
+                </div>
+                <div class="header-right">
+                    <input type="text" id="searchInput" placeholder="🔍 Search tasks..." class="search-bar">
+                </div>
+            </header>
+
+            <form id="todoForm" class="input-section">
+                <div class="main-input-group">
+                    <input type="text" id="taskInput" placeholder="What needs doing today?" required>
+                    <button type="submit" class="add-btn">➕</button>
+                </div>
+                <div class="quick-options" id="quickOptions">
+                    <button type="button" class="quick-btn" data-priority="high">🔴 Urgent</button>
+                    <button type="button" class="quick-btn" data-priority="medium">🟡 Later</button>
+                    <button type="button" class="quick-btn" data-priority="low">🟢 Chill</button>
+                </div>
+            </form>
+
+            <div class="controls-panel">
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all">All</button>
+                    <button class="tab-btn" data-filter="today">Today</button>
+                    <button class="tab-btn" data-filter="pending">Pending</button>
+                    <button class="tab-btn" data-filter="completed">Done</button>
+                    <button class="tab-btn danger" data-filter="overdue">⚠️ Overdue</button>
+                </div>
+                <div class="bulk-actions">
+                    <button id="clearDone" class="action-btn">🗑️ Clear Done</button>
+                    <button id="exportBtn" class="action-btn secondary">📤 Export</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="pendingTasks">0</span>
+                    <span class="stat-label">Pending</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="overdueTasks">0</span>
+                    <span class="stat-label">Overdue</span>
+                </div>
+            </div>
+
+            <div class="tasks-dropzone" id="taskList">
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">✨</div>
+                    <h3>Add your first task!</h3>
+                    <p>Press Enter or click ➕ to get started</p>
+                </div>
+            </div>
+
+            <div class="keyboard-shortcuts">
+                <div>⌘+Enter = Add • ⌘+K = Search • Del = Delete</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
