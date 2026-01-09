@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindler Clone - Career Guidance</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mindler</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#assessment">Assessment</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><button id="loginBtn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>India's Best Career Counselling Platform</h1>
+        <p>5-D psychometric assessment: Orientation Style, Interest, Personality, Aptitude & EQ</p>
+        <button onclick="startAssessment()">Take Assessment</button>
+    </section>
+
+    <section id="assessment" class="assessment">
+        <h2>Advanced 5-D Assessment</h2>
+        <form id="assessForm">
+            <label>Interest (1-10):</label><input type="number" id="interest" min="1" max="10">
+            <label>Personality (1-10):</label><input type="number" id="personality" min="1" max="10">
+            <label>Aptitude (1-10):</label><input type="number" id="aptitude" min="1" max="10">
+            <label>EQ (1-10):</label><input type="number" id="eq" min="1" max="10">
+            <label>Orientation Style:</label><input type="text" id="orientation">
+            <button type="submit">Submit & Get Report</button>
+        </form>
+        <div id="recommendations"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mindler Clone. Built with HTML, CSS, JS & Firebase.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
