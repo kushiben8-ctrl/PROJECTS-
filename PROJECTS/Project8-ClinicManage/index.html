@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System - Direction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Direction - Clinic Management System</h1>
+            <p>Streamlining Healthcare Communication</p>
+        </div>
+
+        <div class="content">
+            <!-- Login Section -->
+            <div id="loginSection" class="login-section">
+                <div class="login-card">
+                    <h3>👨‍⚕️ Doctor Login</h3>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="doctorEmail" placeholder="doctor@clinic.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="doctorPassword" placeholder="Enter password">
+                    </div>
+                    <button class="btn btn-primary" onclick="loginDoctor()">Login as Doctor</button>
+                </div>
+
+                <div class="login-card">
+                    <h3>👨‍💼 Receptionist Login</h3>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="receptionistEmail" placeholder="reception@clinic.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="receptionistPassword" placeholder="Enter password">
+                    </div>
+                    <button class="btn btn-primary" onclick="loginReceptionist()">Login as Receptionist</button>
+                </div>
+            </div>
+
+            <!-- Receptionist Dashboard -->
+            <div id="receptionistDashboard" class="dashboard">
+                <div class="dashboard-header">
+                    <h2>Receptionist Dashboard</h2>
+                    <button class="btn btn-secondary btn-small" onclick="logout()">Logout</button>
+                </div>
+
+                <div class="patient-form">
+                    <h3 style="margin-bottom: 20px; color: #495057;">Register New Patient</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Patient Name</label>
+                            <input type="text" id="patientName" placeholder="Enter patient name">
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" id="patientAge" placeholder="Enter age">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" id="patientPhone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select id="patientGender" style="width: 100%; padding: 12px; border: 1px solid #ced4da; border-radius: 8px;">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical History (Optional)</label>
+                        <textarea id="patientHistory" style="width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 8px; min-height: 60px;"></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="registerPatient()">Generate Token & Register</button>
+                </div>
+
+                <div class="patient-list">
+                    <h3 style="margin-bottom: 20px; color: #495057;">Today's Patients</h3>
+                    <div id="receptionistPatientList"></div>
+                </div>
+            </div>
+
+            <!-- Doctor Dashboard -->
+            <div id="doctorDashboard" class="dashboard">
+                <div class="dashboard-header">
+                    <h2>Doctor Dashboard</h2>
+                    <button class="btn btn-secondary btn-small" onclick="logout()">Logout</button>
+                </div>
+
+                <div class="patient-list">
+                    <h3 style="margin-bottom: 20px; color: #495057;">Patient Queue</h3>
+                    <div id="doctorPatientList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
